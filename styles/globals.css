@@ -1,29 +1,31 @@
 html,
 body {
-   padding: 0;
-   margin: 0;
+  padding: 0;
+  margin: 0;
 
-   background: #f5f6f8;
+  background: #f5f6f8;
 
-   color: var(--black);
-   font-family: var(--font-family);
+  color: var(--black);
+  font-family: var(--font-family);
 }
 
 a {
-   color: inherit;
-   text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-   --black: #3b434e;
-   --white: white;
-   --primary: #7653fc;
-   --red: #fc836d;
-   --green: #1dc37e;
-   --green-light: #c8f8e4;
-   --font-family: 'Noto Sans KR', sans-serif;
+  --black: #3b434e;
+  --gray-light: #ebebeb;
+  --white: white;
+  --primary: #7653fc;
+  --primary-hover: #613feb;
+  --red: #fc836d;
+  --green: #1dc37e;
+  --green-light: #c8f8e4;
+  --font-family: 'Noto Sans KR', sans-serif;
 }
