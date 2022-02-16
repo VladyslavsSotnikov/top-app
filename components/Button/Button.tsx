@@ -3,13 +3,7 @@ import ArrowIcon from './arrow.svg';
 import classes from './Button.module.css';
 import cn from 'classnames';
 
-export const Button = ({
-  appearance = 'primary',
-  arrow = 'none',
-  className,
-  children,
-  ...props
-}: ButtonProps): JSX.Element => {
+export const Button = ({ appearance, arrow = 'none', className, children, ...props }: ButtonProps): JSX.Element => {
   return (
     <button
       className={cn(classes.button, className, {
