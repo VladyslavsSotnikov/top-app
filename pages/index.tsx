@@ -6,8 +6,10 @@ export default function Home() {
       <HTag tag='h1'>Text</HTag>
       <HTag tag='h2'>Text</HTag>
       <HTag tag='h3'>Text</HTag>
-      <Button>Button</Button>
-      <Button appearance='ghost'>Button</Button>
+      <Button>Узнать подробнее</Button>
+      <Button appearance='ghost' arrow='right'>
+        Читать отзывы
+      </Button>
     </div>
   );
 }

@@ -33,3 +33,14 @@
   color: var(--white);
   background-color: var(--primary);
 }
+
+.arrow {
+  display: inline-block;
+
+  margin-left: 15px;
+}
+
+.down {
+  transform: rotate(90deg);
+  transition: all 0.2s;
+}
