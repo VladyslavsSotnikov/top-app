@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button, HTag, PTag, Tag } from '../components';
 import { Rating } from '../components/Rating/Rating';
-import { Layout, withLayout } from '../loyout/Layout';
+import { withLayout } from '../loyout/Layout';
 
 function Home() {
   const [rating, setRating] = useState(4);

@@ -9,14 +9,12 @@ import { FunctionComponent } from 'react';
 
 export const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
-    <>
-      <Header />
-      <div>
-        <Sidebar />
-        <div>{children}</div>
-      </div>
-      <Footer />
-    </>
+    <div className={classes.wrapper}>
+      <Header className={classes.header} />
+      <Sidebar className={classes.sidebar} />
+      <div className={classes.body}>{children}</div>
+      <Footer className={classes.footer} />
+    </div>
   );
 };
 
