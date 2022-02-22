@@ -1,12 +1,15 @@
 import axios from 'axios';
 import { GetStaticProps } from 'next';
 import { useState } from 'react';
-import { Button, HTag, PTag, Tag } from '../components';
-import { Rating } from '../components/Rating/Rating';
-import { MenuItem } from '../interfaces/menu.interface';
+
+import { Button, HTag, PTag, Rating, Tag } from '../components';
+
 import { withLayout } from '../loyout/Layout';
 
-function Home({ firstCategory, menu }: HomeProps) {
+import { MenuItem } from '../interfaces/menu.interface';
+import { TopLevelCategory } from '../interfaces/page.interface';
+
+function Home() {
   const [rating, setRating] = useState(4);
 
   return (
@@ -45,5 +48,5 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
 
 interface HomeProps extends Record<string, unknown> {
   menu: MenuItem[];
-  firstCategory: number;
+  firstCategory: TopLevelCategory;
 }

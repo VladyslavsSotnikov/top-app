@@ -1,9 +1,10 @@
-import { createContext, PropsWithChildren, useState } from 'react';
+import { createContext, PropsWithChildren, useEffect, useState } from 'react';
 import { MenuItem } from '../interfaces/menu.interface';
+import { TopLevelCategory } from '../interfaces/page.interface';
 
 export interface IAppContext {
   menu: MenuItem[];
-  firstCategory: number;
+  firstCategory: TopLevelCategory;
   setMenu?: (menu: MenuItem[]) => void;
 }
 
@@ -15,6 +16,10 @@ export const AppContextProvider = ({ menu, firstCategory, children }: PropsWithC
   const setMenu = (menu: MenuItem[]) => {
     setMenuState(menu);
   };
+
+  useEffect(() => {
+    setMenuState(menu);
+  }, [menu]);
 
   return (
     <AppContext.Provider
