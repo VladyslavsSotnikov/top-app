@@ -9,7 +9,6 @@ import { MenuItem } from '../../interfaces/menu.interface';
 import { TopLevelCategory } from '../../interfaces/page.interface';
 
 function Type({ firstCategory }: TypeProps) {
-  console.log(firstCategory);
   return <>Its Type: {firstCategory && firstLevelCategory[firstCategory].name} </>;
 }
 

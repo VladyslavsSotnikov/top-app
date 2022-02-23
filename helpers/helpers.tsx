@@ -12,3 +12,11 @@ export const firstLevelCategory: FirstLevelCategory[] = [
   { route: 'books', name: 'Книги', icon: <BookIcon />, id: TopLevelCategory.Books },
   { route: 'products', name: 'Продукты', icon: <ProductsIcon />, id: TopLevelCategory.Products },
 ];
+
+export const priceRu = (price: number): string => {
+  const formattedPrice = price
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
+    .concat(' ₽');
+  return formattedPrice;
+};
